@@ -18,6 +18,10 @@ function setup() {
   poseNet.on("pose", gotPoses);
 }
 
+function modelLoaded() {
+  console.log("model loaded");
+}
+
 function gotPoses(results) {
   if (results.length > 0) {
     console.log(results);
